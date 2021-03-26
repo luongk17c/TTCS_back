@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <% include template/header1 %>
+    <!----------------------single product detail------------------->
+    
+<div class="small-container single-product">
+    <div class="row">
+     <% dulieu.sanpham.forEach(function(spchitiet){ %>
+    <% if(spchitiet.id == idsanpham) { %>
+            <div class="col-2">
+                <img src=" <%= spchitiet.bigImage %> " alt="" width="100%" id="productImg">
+            <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="<%= spchitiet.bigImage %>" alt="" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="<%= spchitiet.bigImage1 %>" alt="" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="<%= spchitiet.bigImage2 %>" alt="" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="<%= spchitiet.bigImage3 %>" alt="" width="100%" class="small-img">
+                    </div>
+            </div>
+        </div>
+        <!----------sorting-------------->
+        <div class="col-2">
+            <p>Home / SP <%= idsanpham %></p>
+            <h2><%= spchitiet.name %></h2>
+            <h4><%= spchitiet.price %></h4>
+             <%} }) %>
+            <a href="/gio-hang" class="btn">Thêm vào giỏ</a>
+            <h3>Chi tiết sản phẩm <i class="fa fa-indent"></i></h3><br><hr>
+            <div class="details">
+                <i class="fa fa-laptop"></i>    15.6", 1920 x 1080 Pixel, WVA, 120
+                <hr>
+                <i class="fa fa-battery-full"></i>    Intel Core i7-10750H
+                <hr>
+                <i class="fa fa-cc"></i> 16 GB, DDR4, 2933 MHz
+                <hr>
+                <i class="fa fa-crop"></i> SSD 512 GB
+                <hr>
+                <i class="fa fa-flag"></i> Nvidia GTX1660Ti 6GB
+                <hr>
+                <i class="fa fa-credit-card"></i> Giảm ngay 120.000đ cho đơn hàng từ 4 triệu khi thanh toán Online
+                     100% qua VNPAY-QR. Mã khuyến mại VNPAY120
+            </div>
+    </div>
+</div>
+<!----------------------titlel------------------->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Sản phẩm tương tự</h2>
+            <h2 class="viewmore">Xem thêm</h2>
+        </div>
+    </div>
+
+<!---------------------- products------------------->
+    <div class="small-container">
+        <div class="row">
+            <div class="col-4">
+                <img src="/images/product-1.png" alt="">
+                <h4>Dell G3 15 3500B</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>23,000,000đ</p>
+            </div>
+            <div class="col-4">
+                <img src="/images/product-2.png" alt="">
+                <h4>MacBook Air 13" 2020</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>47,550,000đ</p>
+            </div>
+            <div class="col-4">
+                <img src="/images/product-3.jpg" alt="">
+                <h4>Asus ROG Strix G512</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>30,000,000đ</p>
+            </div>
+            <div class="col-4">
+                <img src="/images/product-4.png" alt="">
+                <h4>Laptop HP Envy 13</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>18,990,000đ</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------js for product gallery------------------->
+<script >
+    var productImg=document.getElementById("productImg");
+
+    var smallImg=document.getElementsByClassName("small-img");
+
+    smallImg[0].onclick=function(){
+        productImg.src = smallImg[0].src;
+    }
+    smallImg[1].onclick=function(){
+        productImg.src = smallImg[1].src;
+    }
+    smallImg[2].onclick=function(){
+        productImg.src = smallImg[2].src;
+    }
+    smallImg[3].onclick=function(){
+        productImg.src = smallImg[3].src;
+    }
+</script>
+    
+    <% include template/footer %>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!----------------------header------------------->
+    <% include template/header1 %>
+<!---------------------------cart items details--------------------------------->
+            <div class="small-container cart-page">
+                <table>
+                    <tr>
+                        <th>Sản phẩm</th>
+                        <th>Số lượng</th>
+                        <th>Tổng giá</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <img src="./images/product-1.png" alt="">
+                                <div>
+                                    <p>Dell G3 15 3500B</p>
+                                    <small>Giá: $50,00</small><br>
+                                    <a href="">Xóa bỏ</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td><input type="number" value="1"></td>
+                        <td>$50,00</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <img src="./images/product-2.png" alt="">
+                                <div>
+                                    <p>MacBook Air 13" 2020</p>
+                                    <small>Giá: $50,00</small><br>
+                                    <a href="">Xóa bỏ</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td><input type="number" value="1"></td>
+                        <td>$50,00</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <img src="./images/product-3.jpg" alt="">
+                                <div>
+                                    <p>Asus ROG Strix G512</p>
+                                    <small>Giá $50,00</small><br>
+                                    <a href="">Xóa bỏ</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td><input type="number" value="1"></td>
+                        <td>$50,00</td>
+                    </tr>
+                </table>
+                <!--total price-->
+                <div class="total-price">
+                    <table>
+                        <tr>
+                            <td>Tổng tiền</td>
+                            <td>$200,00</td>
+                        </tr>
+                        <tr>
+                            <td>Thuế</td>
+                            <td>$20,00</td>
+                        </tr>
+                        <tr>
+                            <td>Thành tiền</td>
+                            <td>$220,00</td>
+                        </tr>
+                    </table>
+                </div>
+
+
+            </div>
+
+    <!---------------------------footer--------------------------------->
+    <% include template/footer %>

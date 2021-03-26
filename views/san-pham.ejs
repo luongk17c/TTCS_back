@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm</title>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+ 
+   <% include template/header1 %>
+   
+    <div class="small-container">
+    <div class="row row-2">
+        <h2>Tất cả sản phẩm</h2>
+        <select>
+            <option>Sắp xếp mặc định</option>
+            <option>Sắp xếp theo giá</option>
+            <option>Sắp xếp theo độ phổ biến</option>
+            <option>Sắp xếp theo đánh giá</option>
+            <option>Sắp xếp theo giảm giá</option>
+        </select>
+    </div>
+   
+    <!----------------------featured product------------------->
+    <div class="small-container">
+        <div class="row">
+            <% dulieu.sanpham.forEach(function(motsanpham){ %>
+                <div class="col-4">
+                <a href="/chi-tiet-san-pham/<%= motsanpham.linkSEO %>.<%= motsanpham.id %>"><img src="<%= motsanpham.bigImage %>  " alt=""></a>
+                <a href="/chi-tiet-san-pham/<%= motsanpham.linkSEO %>.<%= motsanpham.id %>"><h4><%= motsanpham.name %></h4></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p><%= motsanpham.price %></p>
+            </div>
+            <% }) %>
+        </div>
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594</span>
+        </div>
+    </div>
+    </div>
+<!---------------------js query------------------->
+<script>
+    var menuItems= document.getElementById("menuItems");
+
+    menuItems.style.maxHeight="0px";
+    function menutoggle(){
+        if(menuItems.style.maxHeight == "0px"){
+            menuItems.style.maxHeight="200px";
+        }
+        else{
+            menuItems.style.maxHeight="0px";
+        }
+    }
+</script>
+<!---------------------footer--------------------->
+<% include template/footer %>

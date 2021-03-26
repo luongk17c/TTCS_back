@@ -1,0 +1,124 @@
+{
+    "sanpham": [
+      { "id": 1,
+        "name": "Laptop Dell G3 15 3500B i7 10750H/8GB/512GB/15.6 FHD    IPS /NV GTX1660Ti WLED-backlit 6GB/Win 10",
+        "bigImage": "/images/dell-g3/4.png",
+        "bigImage1": "/images/dell-g3/1.png",
+        "bigImage2": "/images/dell-g3/2.png",
+        "bigImage3": "/images/dell-g3/3.png",
+        "price": "31,490,000đ",
+        "linkSEO": "san-pham-1"
+      },
+
+      { "id": 2,
+        "name": "Laptop Acer Nitro Gaming AN515-55-77P9 i7 10750H/8GB/512GB/15.6 FHD IPS /GTX1650Ti 4GB/Win 10 WLED-backlit ",
+        "bigImage": "/images/acer-nitro5/4.png",
+        "bigImage1": "/images/acer-nitro5/1.png",
+        "bigImage2": "/images/acer-nitro5/2.png",
+        "bigImage3": "/images/acer-nitro5/3.png",
+        "linkSEO": "san-pham-2"
+      },
+
+      { "id": 3,
+        "name": "Laptop Asus ROG Strix G512 i7 10870H/8GB/512GB SSD 1920 x 1080 Pixel, IPS, 60 Hz/GTX1650Ti 4GB ",
+        "bigImage": "/images/Rog-Strix/4.jpg",
+        "bigImage1": "/images/Rog-Strix/1.jpg",
+        "bigImage2": "/images/Rog-Strix/2.jpg",
+        "bigImage3": "/images/Rog-Strix/3.jpg",
+        "price": "33,990,000đ",
+        "linkSEO": "san-pham-3"
+      },
+
+      { "id": 4,
+        "name": "Laptop HP Envy 13 i7 1165G7/8GB/512GB/13.3 FHD /Win10 BrightView Micro-edge WLED-backlit",
+        "bigImage": "/images/Hp-envy/4.png",
+        "bigImage1": "/images/Hp-envy/1.png",
+        "bigImage2": "/images/Hp-envy/2.png",
+        "bigImage3": "/images/Hp-envy/3.png",
+        "price": "28,990,000đ",
+        "linkSEO": "san-pham-4"
+      },
+      {
+      "id": 5,
+      "name": "Laptop MSI GF75 10SCSR 10750H/8GB/512GB/17.3FHD/    GTX 1650Ti 4GB/Win 10 1920 x 1080 Pixel, IPS, 60 Hz WVA-Anti-Glare",
+      "bigImage": "/images/sp8/4.jpg",
+      "bigImage1": "/images/sp8/1.jpg",
+      "bigImage2": "/images/sp8/2.jpg",
+      "bigImage3": "/images/sp8/3.jpg",
+      
+      "price": "25,490,000đ",
+      "linkSEO": "san-pham-5"
+      },
+      {
+      "id": 6,
+      "name": "Laptop Dell G5 15 5500 i7 10750H/16GB/512GB/15.6FHD/ RTX 2060 6GB/Win 10 WVA Anti-glare 1920 x 1080 Pixel, 144 Hz ",
+      "bigImage": "/images/sp1/4.jpg",
+      "bigImage1": "/images/sp1/1.jpg",
+      "bigImage2": "/images/sp1/2.jpg",
+      "bigImage3": "/images/sp1/3.jpg",
+      "price": "30,000,000đ",
+      "linkSEO": "san-pham-6"
+      },
+      {
+      "id": 7,
+      "name": "Laptop Acer Aspire Gaming A715 41G R282 3550H/8GD4/512GSSD15.6, 1920 x 1080 Pixel, IPS, 60 Hz, LED-backlit",
+      "bigImage": "/images/sp2/4.png",
+      "bigImage1": "/images/sp2/1.png",
+      "bigImage2": "/images/sp2/2.png",
+      "bigImage3": "/images/sp2/3.png",
+     
+      "price": "18,990,000đ",
+      "linkSEO": "san-pham-7"
+      },
+      {
+      "id": 8,
+      "name": "Laptop MSI Bravo 15 A4DCR-270VN R5 4600H/8GB/256GB/AMD RX5300M-3GB/Win10 1920 x 1080 Pixel",
+      "bigImage": "/images/sp3/4.png",
+      "bigImage1": "/images/sp3/1.png",
+      "bigImage2": "/images/sp3/2.png",
+      "bigImage3": "/images/sp3/3.png",
+      "price": "25,550,000đ",
+      "linkSEO": "san-pham-8"
+      },
+      {
+      "id": 9,
+      "name": "Laptop Asus Zenbook UX425EA BM069T i5 1135G7/8G/512GB SSD/14 FHD/VGA Iris Xe/Win 10  1920 x 1080 Pixel, 144 Hz LED-backlit  ",
+      "bigImage": "/images/sp4/4.png",
+      "bigImage1": "/images/sp4/1.png",
+      "bigImage2": "/images/sp4/2.png",
+      "bigImage3": "/images/sp4/3.png",
+      "price": "20,990,000đ",
+      "linkSEO": "san-pham-9"
+      },
+      {
+      "id": 10,
+      "name": "Laptop MSI Modern 14 B10MW i3 10110U/8GB/256GB/SSD 256G/14 FHD/Win 10  Anti-glare LED-backlit 1920 x 1080 Pixel, 144 Hz",
+      "bigImage": "/images/sp5/4.jpg",
+      "bigImage1": "/images/sp5/1.png",
+      "bigImage2": "/images/sp5/2.jpg",
+      "bigImage3": "/images/sp5/3.jpg",
+      "price": "48,990,000đ",
+      "linkSEO": "san-pham-10"
+      },
+      {
+      "id": 11,
+      "name": "Laptop Asus Vivobook X515JA EJ604T i5 1035G1/4GB/512GB SSD/ HDD 1T /15.6 FHD/Win 10 Anti-glare LED-backlit 1920 x 1080 Pixel, 144 Hz",
+      "bigImage": "/images/sp6/4.jpg",
+      "bigImage1": "/images/sp6/1.png",
+      "bigImage2": "/images/sp6/2.jpg",
+      "bigImage3": "/images/sp6/3.jpg",
+      "price": "16,990,000đ",
+      "linkSEO": "san-pham-11"
+      },
+      {
+      "id": 12,
+      "name": "MacBook Pro 13  2020 Touch Bar M1 256GB 13.3, 2560 x 1600 Pixel, IPS, IPS LCD LED Backlit, Anti-glare  LED-backlit 1920 x 1080 Pixel, 144 Hz",
+      "bigImage": "/images/sp7/4.png",
+      "bigImage1": "/images/sp7/1.png",
+      "bigImage2": "/images/sp7/2.png",
+      "bigImage3": "/images/sp7/3.png",
+      "price": "68,990,000đ",
+      "linkSEO": "san-pham-12"
+      }
+  ]
+}

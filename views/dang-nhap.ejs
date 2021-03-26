@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account - Register</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!----------------------header------------------->
+    <% include template/header1 %>
+<!---------------------------account--------------------------------->
+    <div class="account-page" style="background: url(./images/slide1..jpg) center / cover no-repeat;">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="./images/image1.png" alt=""width="100%">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">  
+                            <span onclick="login1()">Đăng nhập</span>
+                            <span onclick="register()">Đăng kí</span>
+                            <hr id="Indicator">
+                        </div>
+                        <!--form login-->
+                        <form id="login"> 
+                            <input type="text" placeholder="User name">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Đăng nhập</button>
+                            <a href="">Quên mật khẩu ?</a>
+                        </form>
+                        <!--form register-->
+                        <form id="reg">
+                            <input type="text" placeholder="User name">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Đăng kí</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------footer--------------------------------->
+    <% include template/footer %>
+<!----------------------js query for login form------------------->
+<script src="./javascripts/login-res.js"></script>
+</body>
+</html>

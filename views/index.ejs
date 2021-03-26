@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<% include template/header %>
+   
+    <!----------------------featured categories------------------->
+    <div class="catalo">
+     <h2 class="title">Acer Nitro 5</h2>
+        <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <img src="./images/category-1.png" alt="">
+            </div>
+            <div class="col-3">
+                <img src="./images/category-2.png" alt="">
+            </div>
+            <div class="col-3">
+                <img src="./images/category-3.png" alt="">
+            </div>
+            </div>
+         </div>
+    </div>
+    <!----------------------featured product------------------->
+    <div class="small-container">
+        <h2 class="title">Sản phẩm nổi bật</h2>
+        <div class="row">
+
+        <% dulieu.sanpham.forEach(function(motsanpham){ %>
+        <% if(motsanpham.id <= 4) { %>
+            <div class="col-4">
+                <a href="/chi-tiet-san-pham/<%= motsanpham.linkSEO %>.<%= motsanpham.id %>"><img src="<%= motsanpham.bigImage %>  " alt=""></a>
+                <a href="/chi-tiet-san-pham/<%= motsanpham.linkSEO %>.<%= motsanpham.id %>"><h4><%= motsanpham.name %></h4></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p><%= motsanpham.price %></p>
+            </div>
+            <% }}) %>
+    </div>
+
+        <h2 class="title">Sản phẩm mới nhất</h2>
+        <div class="row">
+        <% dulieu.sanpham.forEach(function(motsanpham){ %>
+        <% if(motsanpham.id > 4) { %>
+            <div class="col-4">
+                <a href="/chi-tiet-san-pham/<%= motsanpham.linkSEO %>.<%= motsanpham.id %>"><img src="<%= motsanpham.bigImage %>  " alt=""></a>
+               <a href="/chi-tiet-san-pham/<%= motsanpham.linkSEO %>.<%= motsanpham.id %>"><h4><%= motsanpham.name %></h4></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p><%= motsanpham.price %></p>
+            </div>
+            <% }}) %>
+        </div>
+    </div>
+    <!----------------------offer------------------->
+    <div class="offer" style="background: url(./images/slide1..jpg) center / cover no-repeat;">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                </div>
+                <div class="col-2">
+                    <p>Có sẵn độc quyền trên RedStore</p>
+                    <h1>Swift 5</h1>
+                    <small>Mỏng, nhẹ và cao cấp khi chạm vào. Tính di động chưa bao giờ tốt đến vậy,
+                         đặc biệt là với bộ vi xử lý Intel ® Core ™ thế hệ thứ 11 và đồ họa Intel ® Iris ® X e .
+                    </small> <br>
+                    <a href="" class="btn">Xem ngay</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------testimonial------------------->
+    <div class="testimonial" id="about">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Bộ vi xử lý Apple M1 với 16 tỉ bóng bán dẫn, bao gồm 8 nhân cực mạnh, trong 
+                         đó có 4 nhân hiệu năng cao và 4 nhân tiết kiệm điện, mang 
+                         đến cho MacBook Air tốc độ xử lý tuyệt vời, đồng thời kéo dài 
+                         thời lượng pin. Nhờ vậy MacBook Air 13 2020 M1 có hiệu suất 
+                         nhanh gấp 3,5 lần thế hệ cũ, cho bạn làm việc với cả những công 
+                         việc chuyên nghiệp, những tác vụ nặng mà không thể chạy được 
+                         trên MacBook Air trước đây</p>
+                         <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <img src="./images/user-1.png" alt="">
+                        <h3>Dương Vũ</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>MacBook Air 13 M1 có khả năng đồ họa khó tin trên một chiếc
+                         laptop siêu nhỏ gọn. GPU tích hợp trên Apple M1 có tới 8 nhân 
+                         và là GPU tích hợp mạnh nhất thế giới laptop hiện nay.
+                          So với thế hệ trước, MacBook Air 13 2020 M1 có khả năng xử lý 
+                          đồ họa mạnh gấp 5 lần. Giờ đây ngay trên chiếc MacBook Air 
+                          cực kỳ di động, bạn đã có thể xem và chỉnh sửa video 4K mượt mà,
+                           thậm chí là chơi game cũng như chạy các tác vụ đồ họa chuyên sâu</p>
+                         <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <img src="./images/user-2.png" alt="">
+                        <h3>Nguyễn Quý</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Thời lượng pin tới 18 tiếng
+                        MacBook Air trước đây đã được đánh giá cao về thời lượng pin, 
+                        nhưng với MacBook Air 13 2020 M1, bạn còn làm được nhiều 
+                        điều hơn thế. Chiếc MacBook Air mới nhất có thể lướt web liên tục
+                         trong 15 tiếng và xem video liên tục trong 18 tiếng. Sẽ thật dễ dàng
+                          để bạn làm việc hay giải trí cả ngày mà không cần quan tâm đến
+                           nguồn điện với MacBook Air M1. Tôi rất thích điểm này của chiếc
+                            laptop này </p>
+                         <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <img src="./images/user-3.png" alt="">
+                        <h3>Quốc Thái</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------brands------------------->
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                  <a href="http://dell.com" target="blank"> <img src="./images/logo-dell.jpg" alt=""width="160px" > </a>
+                </div>
+                <div class="col-5">
+                <a href="http://asus.com" target="blank">  <img src="./images/logo-asus.jpg"alt=" "width="160px"> </a>
+                </div>
+                <div class="col-5">
+                   <a href="http://msi.com" target="blank"> <img src="./images/logo-msi.png" alt=""></a>
+                </div>
+                <div class="col-5">
+                   <a href="http://hp.com" target="blank"> <img src="./images/logo-hp.jpg" alt=""></a>
+                </div>
+                <div class="col-5">
+                   <a href="http://lenovo.com" target="blank"> <img src="./images/logo-lenovo.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+</div>
+    <% include template/footer %>
